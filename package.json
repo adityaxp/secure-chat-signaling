@@ -1,15 +1,12 @@
 {
   "name": "secure-chat-signaling",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node src/server.ts"
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "ws": "^8.20.0"
   },
